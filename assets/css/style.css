@@ -1,0 +1,28 @@
+body {
+    background-color: #EBD7FB;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice-image {
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.choice-image:hover {
+    border-color: #999;
+}
+
+.message
+{
+    color: red;
+}
