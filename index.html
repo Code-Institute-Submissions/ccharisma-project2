@@ -3,17 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Rock - Paper - Scissors - Lizard - Spock</title>
+    <title>Rock - Paper - Scissors - Lizard - Spock</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-    <h1>Rock - Paper - Scissors - Lizard - Spock</h1>
-   </header>
+   
+    <div class="container mt-5">
+        <div class="text-center bg-white shadow p-5 rounded">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+            <input type="text" id="playerName" placeholder="Enter your name here" class="form-control mt-4 w-50 mx-auto"><br>
+            <button onclick="startGame()" id="gameStart" class="btn btn-primary">Start Game</button>
+    </div>
+    </div>
 
-   <!-- Score box -->
-<div>
-
-</div>
 <script src="index.js"></script>
 </body>
 </html>
