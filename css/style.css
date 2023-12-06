@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#playerName
+{
+    font-size: 18px;
+    padding: 10px 14px;
+    
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+.choice-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#gameRules {
+    margin-top: 20px;
+}
+
+#gamePlay {
+    margin-top: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.choice-image {
+    width: 100px; /* Adjust dimensions as needed */
+    height: 100px; /* Adjust dimensions as needed */
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.choice-image:hover {
+    border-color: #999;
+}
+
+.choice-btn {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+    background-color: #eee;
+}
+
+.choice-btn:focus {
+    outline: none;
+}
+
+.choice-btn:active {
+    transform: scale(0.95);
+}
+.message
+{
+    color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #eee;
+}

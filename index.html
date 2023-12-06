@@ -1,22 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock - Paper - Scissors - Lizard - Spock</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-    <div class="container mt-5">
-        <div class="text-center bg-white shadow p-5 rounded">
-            <h1>Rock Paper Scissors Lizard Spock</h1>
-            <input type="text" id="playerName" placeholder="Enter your name here" class="form-control mt-4 w-50 mx-auto"><br>
-            <button onclick="startGame()" id="gameStart" class="btn btn-primary">Start Game</button>
-    </div>
+    <div class="container">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <input type="text" id="playerName" placeholder="Enter your name here"><br>
+        <button onclick="startGame()" id="gameStart">Start Game</button>
+
+        <div id="gamePlay" style="display: none;">
+            <h3 id="score">Score: <br> <span id="playerScore">0</span> - <span id="computerScore">0</span></h3>
+            <div class="choices">
+                <div class="choice-container">
+                    <img src="images/rock.png" alt="Rock" class="choice-image">
+                    <button class="choice-btn" onclick="playGame('rock')">Rock</button>
+                </div>
+                <div class="choice-container">
+                    <img src="images/paper.png" alt="Paper" class="choice-image">
+                    <button class="choice-btn" onclick="playGame('paper')">Paper</button>
+                </div>
+                <div class="choice-container">
+                    <img src="images/scissors.png" alt="Scissors" class="choice-image">
+                    <button class="choice-btn" onclick="playGame('scissors')">Scissors</button>
+                </div>
+                <div class="choice-container">
+                    <img src="images/lizard.png" alt="Lizard" class="choice-image">
+                    <button class="choice-btn" onclick="playGame('lizard')">Lizard</button>
+                </div>
+                <div class="choice-container">
+                    <img src="images/spock.png" alt="Spock" class="choice-image">
+                    <button class="choice-btn" onclick="playGame('spock')">Spock</button>
+                </div>
+            </div>
+            
+            <h4 id="result"></h4>
+            <button onclick="restartGame()">Play Again</button>
+            <button onclick="gameRules()">Game Rules</button>
+            <div id="gameRules" style="display: none;">
+                <!-- Game Rules content goes here -->
+            </div>
+        </div>
+
+        <div id="resultModal" class="modal">
+            <div class="modal-content" style="width: 50%;">
+                <div class="choice-images">
+                    <div class="user-choice" style="display: inline-block; margin-right: 50px;">
+                        <h3>Your Choice:</h3>
+                        <img src="" alt="User's Choice" id="userChoiceImg" class="choice-image">
+                    </div>
+                    <div class="computer-choice" style="display: inline-block; margin-left: 50px;">
+                        <h3>Computer's Choice:</h3>
+                        <img src="" alt="Computer's Choice" id="computerChoiceImg" class="choice-image" style="transform: scaleX(-1);">
+                    </div>
+                </div>
+                <h2 id="modalResult"></h2>
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+
+        <div id="rulesModal" class="modal">
+            <div class="modal-content" style="width: 70%;">
+                <div class="choice-images">
+                    <div class="user-choice" style="display: inline-block; margin-right: 50px; vertical-align: top;">
+                        <img src="images/rules.png" alt="Rules" style="width: 400px;">
+                    </div>
+                    <div class="computer-choice" style="display: inline-block; vertical-align: top; margin-top: 40px;">
+                        <h2 style="color:red; text-align: left;">Game Rules</h2>
+                        <ul style="text-align: left;">
+                            <li><h4>Rock beats scissors and lizard.</h4></li>
+                            <li><h4>Paper beats rock and Spock.</h4></li>
+                            <li><h4>Scissors beat paper and lizard.</h4></li>
+                            <li><h4>Lizard beats Spock and paper.</h4></li>
+                            <li><h4>Spock beats rock and scissors.</h4></li>
+                       </ul>
+                    </div>
+                </div>
+                <h2 id="modalResult"></h2>
+
+                <button class="close-btn" onclick="closeRulesModal()">Close</button>
+            </div>
+        </div>
+
+
+
     </div>
 
-<script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
