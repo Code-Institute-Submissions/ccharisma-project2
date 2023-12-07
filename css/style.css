@@ -1,6 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Audiowide", sans-serif;
+    color: rgb(167, 161, 161);
     text-align: center;
+}
+
+#score {
+    size: medium;
 }
 
 .container {
