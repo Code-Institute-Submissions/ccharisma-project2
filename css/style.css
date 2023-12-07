@@ -8,8 +8,13 @@ body {
     text-align: center;
 }
 
+button {
+    border-radius: 12px;
+    font-family: "Audiowide", sans-serif;
+}
+
 #score {
-    size: medium;
+    font-size: 3vw;
 }
 
 .container {
@@ -62,8 +67,8 @@ button:hover {
 }
 
 .choice-image {
-    width: 100px; /* Adjust dimensions as needed */
-    height: 100px; /* Adjust dimensions as needed */
+    width: 100px;
+    height: 100px;
     margin-bottom: 5px;
     border-radius: 50%;
     border: 2px solid #ccc;
@@ -95,7 +100,7 @@ button:hover {
 }
 .message
 {
-    color: red;
+    color: rgb(98, 165, 187);
 }
 
 .modal {

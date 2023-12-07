@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@300&family=Montserrat:wght@200&family=Oswald:wght@300&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <title>Let's play a game with a computer!</title>
 </head>
 <body>
     <div class="container">
-        <h1>Rock - Paper - Scissors - Lizard - Spock Game</h1>
-        <input type="text" id="playerName" placeholder="Enter your name here"><br>
+        <h1>Rock - Paper - Scissors - Lizard - Spock Game</h1><br>
+        <input type="text" id="playerName" placeholder="Enter your name here"><br><br>
         <button onclick="startGame()" id="gameStart">Start Game</button>
 
         <div id="gamePlay" style="display: none;">
-            <h3 id="score">Score: <br> <span id="playerScore">0</span> - <span id="computerScore">0</span></h3>
-            <br>
+            <p id="score">Score: <br> <span id="playerScore">0</span> - <span id="computerScore">0</span></p>
+            <br><br>
             <div class="choices">
                 <div class="choice-container">
                     <img src="images/rock.png" alt="Rock" class="choice-image">
@@ -42,8 +44,9 @@
             <h4 id="result"></h4>
             <button onclick="restartGame()">Play Again</button>
             <button onclick="gameRules()">Game Rules</button>
+            <button onclick="history()">History</button>
             <div id="gameRules" style="display: none;">
-                <!-- Game Rules content goes here -->
+                
             </div>
         </div>
 
@@ -71,7 +74,7 @@
                         <img src="images/rules.png" alt="Rules" style="width: 400px;">
                     </div>
                     <div class="computer-choice" style="display: inline-block; vertical-align: top; margin-top: 40px;">
-                        <h2 style="color:red; text-align: left;">Game Rules</h2>
+                        <h2 style="color:rgb(98, 165, 187); text-align: left;">Game Rules</h2>
                         <ul style="text-align: left;">
                             <li><h4>Rock beats scissors and lizard.</h4></li>
                             <li><h4>Paper beats rock and Spock.</h4></li>
