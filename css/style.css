@@ -54,6 +54,13 @@ button:hover {
     margin-top: 20px;
 }
 
+p {
+    color: black;
+    text-align: center;
+    margin: 5px;
+    background-color: cadetblue;
+}
+
 .choices {
     display: flex;
     justify-content: center;
