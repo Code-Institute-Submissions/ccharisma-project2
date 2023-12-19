@@ -55,10 +55,10 @@ button:hover {
 }
 
 p {
-    color: black;
+    color: white;
     text-align: center;
     margin: 5px;
-    background-color: cadetblue;
+    background-color: rgb(27, 38, 55);
 }
 
 .choices {
