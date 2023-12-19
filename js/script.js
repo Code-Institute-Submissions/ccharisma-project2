@@ -26,8 +26,8 @@ function playGame(playerChoice) {
     const userChoiceImg = document.getElementById("userChoiceImg");
     const computerChoiceImg = document.getElementById("computerChoiceImg");
 
-    userChoiceImg.src = `images/${playerChoice}.png`; // Assuming your image filenames correspond to the choices
-    computerChoiceImg.src = `images/${computerChoice}.png`; // Assuming your image filenames correspond to the choices
+    userChoiceImg.src = `images/${playerChoice}.png`; 
+    computerChoiceImg.src = `images/${computerChoice}.png`;
 
 
     if (playerChoice === computerChoice) {
@@ -78,7 +78,6 @@ function closeModal() {
     const modal = document.getElementById("resultModal");
     modal.style.display = "none";
 }
-
 
 function gameRules() {
     const modal = document.getElementById("rulesModal");
