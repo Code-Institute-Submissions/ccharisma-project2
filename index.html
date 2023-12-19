@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rock Paper Scissors Lizard Spock</title>
+    <title>Rock Paper Scissors Lizard Spock game</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@300&family=Montserrat:wght@200&family=Oswald:wght@300&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <title>Let's play a game with a computer!</title>
 </head>
 <body>
     <div class="container">
@@ -41,7 +40,6 @@
                 </div>
             </div>
             
-            <h4 id="result"></h4>
             <button onclick="restartGame()">Play Again</button>
             <button onclick="gameRules()">Game Rules</button>
             <div id="gameRules" style="display: none;"><br>
@@ -63,7 +61,7 @@
                         <img src="" alt="Computer's Choice" id="computerChoiceImg" class="choice-image" style="transform: scaleX(-1);">
                     </div>
                 </div>
-                <h2 id="modalResult"></h2>
+                <h2 id="modalResult">Result</h2>
                 <button class="close-btn" onclick="closeModal()">Close</button>
             </div>
         </div>
@@ -85,8 +83,6 @@
                        </ul>
                     </div>
                 </div>
-                <h2 id="modalResult"></h2>
-
                 <button class="close-btn" onclick="closeRulesModal()">Close</button>
             </div>
         </div>
