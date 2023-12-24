@@ -1,6 +1,7 @@
 body {
     background-image: url("../images/background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Audiowide", sans-serif;
     color: rgb(167, 161, 161);
     text-align: center;
